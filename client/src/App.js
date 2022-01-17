@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import FoodManager from "./components/FoodManager/FoodManager";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-screen h-screen flex flex-col">
+      <Header />
+      <div className="flex-grow flex justify-center p-6">
+        <FoodManager />
+
+      </div>
+      <Footer />
     </div>
   );
 }
